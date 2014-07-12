@@ -1,0 +1,57 @@
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper {
+	padding: 3% 3%;
+	/*margin-right: 10%;*/
+}
+
+.hidden {overflow:hidden;}
+.block { display:block;}
+.inline-block { display:inline-block;vertical-align: middle;}
+.top-padding{padding-top: 5%;}
+.bottom-padding{padding-bottom: 5%;}
+
+img {
+	max-height: 50%;
+	/*max-width: 100%;*/
+}
+
+#navSet {
+	cursor: pointer;
+}
+#navBar {
+	width: 30%;
+	display: block;
+	/*font*/
+	/*color*/
+}
+
+#showNavBar {
+	display: none; /* initially hidden */
+	width: 30%;
+}
+
+#welcomeBanner {
+	max-height: 15%;
+	display: block;
+	width: 30%;
+}
+#welcomeMessage{
+	vertical-align: top;
+	text-align: center;
+	/*width: 150px;*/
+	/*font*/
+	/*color*/	
+}
+
+.navItem {
+	display: block;
+	border: 0.1em dashed #DDBBDD;
+	padding: 0.1em 0.1em 0.1em 0.1em;
+}
+
+.footer { padding: 2em 0em 2em 0em; text-align:center;}

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello!</title>
+<!--         <title>{% if pgtitle %}{{pgtitle}}{% else %}Scenario Manager{% endif %}</title> -->
+<!--         <link rel="stylesheet" type="text/css" href="{% static 'smcore/stylesheets/styles.css' %}" />
+        <link rel="shortcut icon" href="{% static 'images/favicon_2.ico' %}" type="image/png">
+        <link rel="stylesheet" type="text/css" href="{% static 'smcore/font-awesome.min.css' %}" />
+        <script src="{% static 'smcore/jquery-latest.js' %}"></script>
+        {% block head %}{% endblock %} -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="src/desktop.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="src/typography.css" /> -->
+        <link rel="shortcut icon" type="image/png" href="favicon_2.ico" />
+        <script src="src/jquery-latest.js"></script>
+        <script src="src/d3.v3.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            
+            <div id="welcomeBanner" class="centered">
+                <div id="welcomeImg" class="inline-block"><img src="/img/sm.png"></div>
+                <div id="welcomeMessage" class="inline-block">
+                    YOU'RE HERE BECAUSE WE LOVE YOU
+                </div>
+            </div> <!-- welcomeBanner -->
+
+            <div id="navSet" class="top-padding bottom-padding">
+                
+                <div id="navBar" class="centered">
+                    <div class="navItem">Main</div>
+                    <div class="navItem">list</div>
+                    <div class="navItem">of</div>
+                    <div class="navItem">things</div>
+                </div> <!-- navBar -->
+
+                <div id="showNavBar" class="centered">x</div>
+
+            </div> <!-- navSet -->
+            <div class="footer">#ammar4sara</div>
+        </div>
+
+        <script src="js.js"></script>
+    </body>
+</html>
