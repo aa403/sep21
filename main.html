@@ -13,33 +13,46 @@
         <!-- <link rel="stylesheet" type="text/css" href="src/typography.css" /> -->
         <link rel="shortcut icon" type="image/png" href="favicon_2.ico" />
         <script src="src/jquery-latest.js"></script>
+        <script src="src/jquery.stellar.js"></script>
         <script src="src/d3.v3.js"></script>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper"> <!-- data-stellar-offset-parent="true"> -->
             
-            <div id="welcomeBanner" class="centered">
+            <!-- <div id="welcomeBanner" class="centered">
                 <div id="welcomeImg" class="inline-block"><img src="/img/sm.png"></div>
                 <div id="welcomeMessage" class="inline-block">
                     YOU'RE HERE BECAUSE WE LOVE YOU
                 </div>
-            </div> <!-- welcomeBanner -->
+            </div> --> <!-- welcomeBanner -->
 
-            <div id="navSet" class="top-padding bottom-padding">
+            <div id="parallaxSet">
                 
-                <div id="navBar" class="centered">
-                    <div class="navItem">Main</div>
-                    <div class="navItem">list</div>
-                    <div class="navItem">of</div>
-                    <div class="navItem">things</div>
-                </div> <!-- navBar -->
+                <div data-stellar-ratio="0" class="plaxItem">Boy meets girl.</div>
+                <div data-stellar-ratio="1.9" class="plaxItem">They talk. They laugh.</div>
+                <div data-stellar-ratio="2" class="plaxItem">They become friends</div>
+                <div data-stellar-ratio="2.5" class="plaxItem">thgen stuff happened</div>
+                <div data-stellar-ratio="2" class="plaxItem">the end?</div>
+                
 
-                <div id="showNavBar" class="centered">x</div>
+            </div><!-- parallaxSet
 
-            </div> <!-- navSet -->
-            <div class="footer">#ammar4sara</div>
+            <!-- <div id="navSet" class="top-padding bottom-padding"> -->
+                
+                <!-- <div id="navBar" class="centered">
+                    <div class="navItem">Why</div>
+                    <div class="navItem">When</div>
+                    <div class="navItem">Where</div>
+                    <div class="navItem">What</div>
+                </div> --> <!-- navBar -->
+
+                <!-- <div id="showNavBar" class="centered">x</div> -->
+
+            <!-- </div> --> <!-- navSet -->
+            <!-- <div class="footer">#ammar4sara</div> -->
         </div>
 
         <script src="js.js"></script>
     </body>
 </html>
+

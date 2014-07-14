@@ -54,4 +54,20 @@ img {
 	padding: 0.1em 0.1em 0.1em 0.1em;
 }
 
+.parallaxSet{
+	width: 30%;
+}
+
+.plaxItem {
+	position: relative;
+	display: block;
+	height: 10%;
+	max-width: 50%
+	border: 0.1em dashed #DDBBDD;
+	padding: 1em 0.1em 1em 0.1em;
+	margin: 3em 0.1em 3em 0.1em;
+	background: url(img/marker.png);
+	background-repeat: no-repeat;
+}
+
 .footer { padding: 2em 0em 2em 0em; text-align:center;}
