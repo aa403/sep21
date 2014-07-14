@@ -25,5 +25,10 @@ plaxItems.each(function(){
 	$(this).css('z-index',++z_index);
 });
 $.stellar({
-	 verticalOffset: 150
+	  horizontalScrolling: false,
+	 // verticalOffset: 150
+	 responsive: true,
+
+  	hideElement: function($elem) { $elem.fadeOut(100); },
+  	showElement: function($elem) { $elem.show(); }
 	});
