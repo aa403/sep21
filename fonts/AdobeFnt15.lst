@@ -1,0 +1,75 @@
+%!Adobe-FontList 1.15
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FrenteH1-Regular
+FamilyName:Frente H1
+StyleName:Regular
+MenuName:Frente H1
+StyleBits:0
+WeightClass:400
+WidthClass:3
+AngleClass:0
+FullName:Frente H1
+WritingScript:Roman
+OutlineFileName:\FrenteH1-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:24872
+FileModTime:1396609818
+NameArray:0,Mac,18,Frente H1 Regular
+NameArray:0,Mac,4,Frente H1
+NameArray:0,Win,1,Frente H1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Lavanderia-Delicate
+FamilyName:Lavanderia
+StyleName:Delicate
+MenuName:Lavanderia Delicate
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Lavanderia Delicate
+WritingScript:Roman
+OutlineFileName:\Lavanderia-Delicate.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:38768
+FileModTime:1329958911
+NameArray:0,Mac,4,Lavanderia Delicate
+NameArray:0,Win,1,Lavanderia Delicate
+NameArray:0,Win,16,Lavanderia
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:218640
+FileModTime:1379109544
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+

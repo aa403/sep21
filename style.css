@@ -1,4 +1,9 @@
 
+@font-face {
+  font-family: 'MyWebFont';
+  src: url(fonts/FrenteH1-Regular.otf) format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .centered {
 	margin-left: auto;
 	margin-right: auto;
@@ -43,19 +48,29 @@ img {
 #welcomeMessage{
 	vertical-align: top;
 	text-align: center;
-	/*width: 150px;*/
+	/*width: 1 50px;*/
 	/*font*/
 	/*color*/	
 }
 
+.mine{
+	display: inline-block;
+	background: url(img/pattern_left.png);
+	background-repeat: no-repeat;
+	height: 50%;
+	width: 13%;
+	text-align: top;
+}
+
 .navItem {
-	display: block;
-	position: absolute;
+	display: inline-block;
+	/*position: absolute;*/
 	/*top: 100px;*/
 	width: 70%;
 	height: 50%;
 	border: 0.1em dashed #DDBBDD;
 	padding: 0.1em 0.1em 0.1em 0.1em;
+	vertical-align: top;
 }
 
 .parallaxSet{
@@ -72,6 +87,8 @@ img {
 	margin: 0em 0.1em 6em 0.1em;
 	background: url(img/marker.png);
 	background-repeat: no-repeat;
+	font-family: 'MyWebFont', Fallback, sans-serif;
+	font-size: xx-large;
 }
 
 .item1 {
@@ -85,3 +102,4 @@ img {
 	background-color: #e06;
 }
 .footer { padding: 2em 0em 2em 0em; text-align:center;}
+
