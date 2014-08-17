@@ -55,9 +55,10 @@ img {
 
 .mine{
 	display: inline-block;
+	/*position: fixed;*/
 	background: url(img/pattern_left.png);
 	background-repeat: no-repeat;
-	height: 50%;
+	height: 100%;
 	width: 13%;
 	text-align: top;
 }
@@ -67,7 +68,7 @@ img {
 	/*position: absolute;*/
 	/*top: 100px;*/
 	width: 70%;
-	height: 50%;
+	height: 500%;
 	border: 0.1em dashed #DDBBDD;
 	padding: 0.1em 0.1em 0.1em 0.1em;
 	vertical-align: top;
