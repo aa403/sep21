@@ -9,7 +9,7 @@
 $(".navItem").on('click', function() {
 	target=$(this).data("target")
 	// remove currentPage class from all navItems
-    $(".navItem").removeClass("currentPage")
+    $(".currentPage").removeClass("currentPage")
 	// add currentPage class to $this
     $(this).addClass("currentPage")
 	
@@ -29,7 +29,7 @@ $(".navItem").on('click', function() {
 $(".nav").on('click', function() {
 	target=$(this).data("target")
 	// remove currentPage class from all navItems
-    $(".navItem").removeClass("currentPage")
+    $(".currentPage").removeClass("currentPage")
     
 	// set nav_ele as the navItem with data-target = target
 	nav_ele = $(".navItem[data-target=".concat(target).concat("]"))
