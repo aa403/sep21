@@ -1,34 +1,51 @@
 
-// turn navBar into little ball
-function hideNavBar(ele){
-	ele.slideUp(125)
-	$('#showNavBar').show()
-};
 
-// show navBar
+// on click, do these things:
+$(".navItem").on('click', function() {
+	target=$(this).data("target")
+	// remove currentPage class from all navItems
+    $(".navItem").removeClass("currentPage")
+	// add currentPage class to $this
+    $(this).addClass("currentPage")
+	
+	// find all divs with classes displayedContent
+	$(".displayedContent").addClass("hiddenContent")
+	$(".displayedContent").removeClass("displayedContent")
 
-$('#showNavBar').on('click', function(){
-	$(this).hide()
-	$('#navBar').slideDown(125)
+	// find div with id == $this.data-target, remove class hiddenContent, add class displayedContent
+	target_ele = $("#".concat(target))
+	target_ele.removeClass('hiddenContent')
+	target_ele.addClass('displayedContent')
+
 });
 
-$('#navBar').on('click', function(){
-	hideNavBar($(this))
-});
 
-var plaxItems = $(document).find('.plaxItem');
-var z_index = 0;
-// var pos_top = 40;
-plaxItems.each(function(){
-	// pos_top = pos_top+40;
-	// $(this).css('top', pos_top);
-	$(this).css('z-index',++z_index);
-});
-$.stellar({
-	  horizontalScrolling: false,
-	 // verticalOffset: 150
-	 responsive: true,
+$('.to-map').click(function() {
+	target=$(this).data("target")
+	window.open(target);
+  });
 
-  	hideElement: function($elem) { $elem.fadeOut(100); },
-  	showElement: function($elem) { $elem.show(); }
-	});
+
+
+$(".nav").on('click', function() {
+	target=$(this).data("target")
+	// remove currentPage class from all navItems
+    $(".navItem").removeClass("currentPage")
+    
+	// set nav_ele as the navItem with data-target = target
+	nav_ele = $(".navItem[data-target=".concat(target).concat("]"))
+	
+
+	// add currentPage class to nav_ele
+    $(nav_ele).addClass("currentPage")
+	
+	// find all divs with classes displayedContent
+	$(".displayedContent").addClass("hiddenContent")
+	$(".displayedContent").removeClass("displayedContent")
+
+	// find div with id == $this.data-target, remove class hiddenContent, add class displayedContent
+	target_ele = $("#".concat(target))
+	target_ele.removeClass('hiddenContent')
+	target_ele.addClass('displayedContent')
+
+});
