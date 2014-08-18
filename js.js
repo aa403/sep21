@@ -1,7 +1,8 @@
 
-// $(document).ready(function () { 
-// 	back_target = "home"
-// })
+$(document).ready(function () { 
+	// back_target = "home"
+	$('html, body').scrollTop(0);
+})
 
 
 
@@ -17,6 +18,7 @@ $(".navItem").on('click', function() {
 	back_target = $(".displayedContent").attr('id')
 	$(".displayedContent").addClass("hiddenContent")
 	$(".displayedContent").removeClass("displayedContent")
+	$('html, body').animate({ scrollTop: 0 }, 'slow');
 
 	// find div with id == $this.data-target, remove class hiddenContent, add class displayedContent
 	target_ele = $("#".concat(target))
@@ -41,6 +43,7 @@ $(".nav").on('click', function() {
 	// find all divs with classes displayedContent
 	$(".displayedContent").addClass("hiddenContent")
 	$(".displayedContent").removeClass("displayedContent")
+	$('html, body').animate({ scrollTop: 0 }, 'slow');
 
 	// find div with id == $this.data-target, remove class hiddenContent, add class displayedContent
 	target_ele = $("#".concat(target))

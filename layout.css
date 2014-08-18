@@ -15,7 +15,7 @@
 @font-face {
   font-family: 'blockish';
   font-weight: 200;
-  src: url(fonts/MinionPro-Regular.otf) format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url(fonts/LANENAR_.ttf) format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
@@ -78,6 +78,10 @@ body {
 
 .small {
 	font-size: 1.5em!important;
+}
+
+.smaller {
+	font-size: 75%!important;
 }
 
 .big {
@@ -153,6 +157,7 @@ body {
 
 
 .barnpic{
+	display: block;
 	height:240px;
 	margin-right: 2px;
 }
@@ -210,19 +215,19 @@ body {
 	}
 
   .col-2-3 {
-    width: 90%;
+    width: 91%;
     float: left;
     margin-right: 2px;
   }
   
   .col-1-2 {
     float: left;
-    width: 90%;
+    width: 91%;
     margin-right: 2px;
   }
   
   .col-1-3 {
-    width: 90%;
+    width: 91%;
     margin-left: auto;
 	margin-right: auto;
   }
@@ -261,13 +266,13 @@ body {
 	right: 0px;
 	z-index: -100;
 	bottom: 0;
-	top: 120;
+	top: 0;
 	width: 133px;
-	background: url(img/pattern.png);
-	/* background-repeat: no-repeat; */
-	background-size: 360%;
-	background-position: 0 120%;
-	opacity: 0.75;
+	background: url(img/_pattern.png);
+	background-repeat: no-repeat; 
+	background-size: 100%;
+	/*background-position: 0 120%;*/
+	/*opacity: 0.75;*/
   }
 
   .struct + .struct {
@@ -277,7 +282,8 @@ body {
 
   .navItem {
   	font-family: blockish;
-	font-size: 0.95em;
+	font-size: 1em;
+	font-weight: bolder;
 	color: rgb(61,64,57);
 	text-align: center;
 	overflow: hidden;
@@ -376,13 +382,13 @@ body {
 	right: 0px;
 	z-index: -100;
 	bottom: 0;
-	top: 120;
+	top: 0;
 	width: 250;
-	background: url(img/pattern.png);
-	/* background-repeat: no-repeat; */
-	background-size: 192%;
-	background-position: 0 120%;
-	opacity: 0.45;
+	background: url(img/_pattern.png);
+	background-repeat: no-repeat;
+	background-size: 65%;
+	background-position: 105% 0%;
+	/*opacity: 0.45;*/
   }
 
   .struct + .struct {
@@ -393,6 +399,7 @@ body {
   .navItem {
 	font-family: blockish;
 	font-size: 1.1em;
+	font-weight: bold;
 	color: rgb(61,64,57);
 	text-align: center;
 	overflow: hidden;
