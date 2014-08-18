@@ -1,4 +1,9 @@
 
+$(document).ready(function () { 
+	back_target = "home"
+})
+
+
 
 // on click, do these things:
 $(".navItem").on('click', function() {
@@ -9,6 +14,7 @@ $(".navItem").on('click', function() {
     $(this).addClass("currentPage")
 	
 	// find all divs with classes displayedContent
+	back_target = $(".displayedContent").attr('id')
 	$(".displayedContent").addClass("hiddenContent")
 	$(".displayedContent").removeClass("displayedContent")
 
@@ -18,13 +24,6 @@ $(".navItem").on('click', function() {
 	target_ele.addClass('displayedContent')
 
 });
-
-
-$('.to-map').click(function() {
-	target=$(this).data("target")
-	window.open(target);
-  });
-
 
 
 $(".nav").on('click', function() {
@@ -49,3 +48,22 @@ $(".nav").on('click', function() {
 	target_ele.addClass('displayedContent')
 
 });
+
+
+// control 'back' event
+$(window).on("navigate", function (event, data) {
+  var direction = data.state.direction;
+  console.log(direction)
+  $(".navItem[data-target=".concat(back_target).concat("]")).click()
+  // if (direction == 'back') {
+  // }
+  // if (direction == 'forward') {
+    // do something else
+});
+
+
+// open external link
+$('.to-link').click(function() {
+	target=$(this).data("target")
+	window.open(target);
+  });
