@@ -1,7 +1,7 @@
 
-$(document).ready(function () { 
-	back_target = "home"
-})
+// $(document).ready(function () { 
+// 	back_target = "home"
+// })
 
 
 
@@ -51,15 +51,15 @@ $(".nav").on('click', function() {
 
 
 // control 'back' event
-$(window).on("navigate", function (event, data) {
-  var direction = data.state.direction;
-  console.log(direction)
-  $(".navItem[data-target=".concat(back_target).concat("]")).click()
-  // if (direction == 'back') {
-  // }
-  // if (direction == 'forward') {
-    // do something else
-});
+// $(window).on("navigate", function (event, data) {
+//   var direction = data.state.direction;
+//   console.log(direction)
+//   $(".navItem[data-target=".concat(back_target).concat("]")).click()
+//   // if (direction == 'back') {
+//   // }
+//   // if (direction == 'forward') {
+//     // do something else
+// });
 
 
 // open external link

@@ -49,7 +49,7 @@ body {
 .blockish {
 	font-family: blockish;
 	/*font-weight: 400;*/
-	font-size: 2em;
+	font-size: 1.5em;
 	margin-right: 2px;
 	vertical-align: middle;
 	overflow: hidden;
@@ -83,16 +83,15 @@ body {
 	border-bottom: 1px solid rgb(61,64,57);
 }
 
-.nav:hover {
+.linked:hover {
 	border-bottom: 2px solid rgb(237,222,201)!important;
 	color: #847A22!important;
+	cursor: pointer;
 }
 
 .navItem:hover {
-	border-bottom: 3px solid rgb(61,64,57)!important;
+	border-bottom: 3px solid rgb(237,222,201)!important;
 }
-
-.nav {cursor: pointer;}
 
 .hiddenContent {
 	display: none;
@@ -109,7 +108,7 @@ body {
 .currentPage{
 	border-width:3px;	
     border-bottom-style:inset;
-	border-bottom-color: rgb(237,222,201) !important;
+	border-bottom-color: rgb(61,64,57) !important;
 }
 
 .struct {
@@ -144,6 +143,11 @@ body {
 }
 
 
+.to-link {
+	cursor:pointer;
+}
+
+
 .clearfix:after {
   content: "";
   display: table;
@@ -164,7 +168,8 @@ body {
 }
 
 
-@media all and ( max-width: 800px ) {
+/*phone */
+@media all and ( max-width: 860px ) {
 
   .row {
 	height: 100px;
@@ -243,7 +248,7 @@ body {
   .navItem {
   	font-family: blockish;
 	font-weight: 600;
-	font-size: 1.25em;
+	font-size: 1em;
 	color: rgb(61,64,57);
 	text-align: center;
 	overflow: hidden;
@@ -279,7 +284,8 @@ body {
 
 }
 
-@media all and ( min-width: 801px ) {
+/*desktop*/
+@media all and ( min-width: 861px ) {
  
   .row {
 	height: 52px;
@@ -373,7 +379,7 @@ body {
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	margin-right: 200px;
+	margin-right: 100px;
 	padding-top: 0px!important;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -382,7 +388,9 @@ body {
 
  
   .card_container {
-  	height: 226px;
+  	width: 100%;
+  	display: table;
+  	overflow: overlay;
   }
 
 
