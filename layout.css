@@ -63,7 +63,7 @@ display: block;
 	}
 
 .biggerFirst::first-letter { 
-	font-size:500%!important;
+	font-size:250%!important;
 	}
 
 .cursiveFirst::first-letter{
@@ -87,7 +87,7 @@ display: block;
 }
 
 .bigger {
-	font-size: 400%!important;
+	font-size: 300%!important;
 }
 
 /*layout*/
@@ -247,7 +247,7 @@ input:focus{
 
 
 /*phone */
-@media all and ( max-width: 860px ) {
+@media all and ( max-width: 960px ) {
 
   .row {
 	height: 100px;
@@ -369,7 +369,7 @@ input:focus{
 }
 
 /*desktop*/
-@media all and ( min-width: 861px ) {
+@media all and ( min-width: 961px ) {
  
   .row {
 	height: 52px;
