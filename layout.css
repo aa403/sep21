@@ -106,6 +106,10 @@ body {
 	cursor: pointer;
 }
 
+.linked:active {
+	background-color: #EBEBEB;
+}
+
 .navItem:hover {
 	border-bottom: 3px solid rgb(237,222,201)!important;
 	color: #847A22!important;
@@ -179,6 +183,40 @@ body {
 	background-size: contain;
 }
 
+#pw_attempt{
+	display: inline-block;
+	width: 132px;
+	height: 103%;
+	vertical-align: middle;
+}
+#submit{
+	display: inline-block;
+	margin-top: -4px;
+	cursor: pointer;
+	/*border-bottom: 1px solid rgb(61,64,57);*/
+}
+
+#submit:hover{
+	border-bottom: 2px solid rgb(61,64,57);
+	font-weight: 500;
+}
+
+#try_again{
+	display: none;
+	padding-left: 134px
+}
+
+input, input[type="password"], input[type="search"] {
+	-webkit-appearance: textfield;
+	border: 1px solid rgb(237,222,201);
+	padding: 2px;
+	cursor: auto;
+}
+
+input:focus{
+	border: 1px solid rgb(61,64,57);
+	outline: 0;
+}
 
 .to-link {
 	cursor:pointer;
