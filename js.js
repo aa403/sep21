@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$('html, body').scrollTop(0);
 	pw_done=false
 	if (pw_done == false){
-		window.location=pw.html;
+		window.location="pw.html";
 	}
 })
 
