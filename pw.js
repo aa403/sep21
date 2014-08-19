@@ -14,8 +14,8 @@ $(document).keypress(function(e) {
 
 
 $("#submit").on('click', function() {
-	q='q=' + $("#pw_attempt").val()
-	target=$(this).data("target")
+	var q='q=' + $("#pw_attempt").val()
+	var target=$(this).data("target")
 	// submit to back end
 	$.ajax({
         type: "GET",

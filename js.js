@@ -2,12 +2,22 @@
 $(document).ready(function () { 
 	// back_target = "home"
 	$('html, body').scrollTop(0);
-	pw_done=false
-	if (pw_done == false && window.location!="pw.html"){
+	
+	var pw_done=false
+	var currurl = window.location.pathname;
+	var curpage = getPageName(currurl)
+
+	if (pw_done == false && curpage!="pw"){
 		window.location="pw.html";
 	}
 })
 
+function getPageName(url) {
+    var index = url.lastIndexOf("/") + 1;
+    var filenameWithExtension = url.substr(index);
+    var filename = filenameWithExtension.split(".")[0]; // <-- added this line
+    return filename;                                    // <-- added this line
+}
 
 
 // on click, do these things:
