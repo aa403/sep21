@@ -22,8 +22,9 @@ $("#submit").on('click', function() {
         url: "pw.php",
         data: q,
         success: function(resp){
-        	var pw_resp = JSON.parse(resp)
         	console.log(q)
+        	console.log(resp)
+        	var pw_resp = JSON.parse(resp)
         	console.log(pw_resp)
         	console.log(target)
 
