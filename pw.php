@@ -1,9 +1,12 @@
 <?php 
 	$pw = 'barn_wedding';
-	if ($_GET['q']):
+	if ($_GET['q']){
 		$q = $_GET["q"];
-		if ($q == $pw):
+		if ($q == $pw){
 			echo true;
-		else: 
+		}
+		else{
 			echo false;
- ?>
+		}
+	}
+?>
