@@ -1,14 +1,13 @@
 
-$(document).ready(function () { 
+$(document).ready(function (e) { 
 	// back_target = "home"
 	$('html, body').scrollTop(0);
 	
-	var pw_done=false
 	var currurl = window.location.pathname;
 	var curpage = getPageName(currurl)
 
-	if (pw_done == false && curpage!="pw"){
-		window.location="pw.html";
+	// if (pw_done != true && curpage!="pw"){
+	// 	window.location="pw.html";
 	}
 })
 

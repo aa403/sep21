@@ -22,9 +22,9 @@ $("#submit").on('click', function() {
         url: "pw.php",
         data: q,
         success: function(pw_resp){
-        	console.log(q)
-        	console.log(pw_resp)
-        	console.log(target)
+        	// console.log(q)
+        	// console.log(pw_resp)
+        	// console.log(target)
 
            if (pw_resp == true){
 				pw_done=true
