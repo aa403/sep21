@@ -15,6 +15,7 @@ $(document).keypress(function(e) {
 
 $("#submit").on('click', function() {
 	q='q=' + $("#pw_attempt").val()
+	target=$(this).data("target")
 	// submit to back end
 	$.ajax({
         type: "GET",
@@ -23,8 +24,10 @@ $("#submit").on('click', function() {
         success: function(pw_resp){
         	console.log(q)
         	console.log(pw_resp)
+        	console.log(target)
+
            if (pw_resp == true){
-				target=$(this).data("target")
+				
 				window.location=target;
 			}
 			else {
