@@ -1,1 +1,1 @@
-<?php include_once("pw.html"); ?>
+<?php include_once("thewedding.html"); ?>

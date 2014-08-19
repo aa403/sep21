@@ -29,7 +29,7 @@ $("#submit").on('click', function() {
 
            if (pw_resp.pass == true){
 				$("#pw_box").slideUp("slow")
-				$("#__main_content").html(pw_resp.ctt)
+				$("#main_content").html(pw_resp.ctt)
 				
 			}
 			else {
