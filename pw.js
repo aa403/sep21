@@ -14,7 +14,15 @@ $(document).keypress(function(e) {
 
 
 $("#submit").on('click', function() {
-	var q='q=' + $("#pw_attempt").val()
+	if ($("#pw_attempt").val()==""){
+		pw_val="0"
+	}
+	else{
+		pw_val=$("#pw_attempt").val()
+	}
+
+	var q='q=' + pw_val
+	
 	var target=$(this).data("target")
 	// submit to back end
 	$.ajax({
@@ -22,11 +30,11 @@ $("#submit").on('click', function() {
         url: "pw.php",
         data: q,
         success: function(resp){
-        	console.log(q)
-        	console.log(resp)
+        	// console.log(q)
+        	// console.log(resp)
         	var pw_resp = JSON.parse(resp)
-        	console.log(pw_resp)
-        	console.log(target)
+        	// console.log(pw_resp)
+        	// console.log(target)
 
            if (pw_resp.pass == true){
 				$("#main_content").html(pw_resp.ctt)
