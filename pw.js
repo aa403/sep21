@@ -28,8 +28,9 @@ $("#submit").on('click', function() {
         	console.log(target)
 
            if (pw_resp.pass == true){
-				$("#pw_box").slideUp("slow")
 				$("#main_content").html(pw_resp.ctt)
+				$("#pw_box").hide()
+				$("#main_content").show()
 				
 			}
 			else {
