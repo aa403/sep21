@@ -3,12 +3,12 @@ $(document).ready(function (e) {
 	// back_target = "home"
 	$('html, body').scrollTop(0);
 	
-	var currurl = window.location.pathname;
-	var curpage = getPageName(currurl)
+	// var currurl = window.location.pathname;
+	// var curpage = getPageName(currurl)
 
 	// if (pw_done != true && curpage!="pw"){
 	// 	window.location="pw.html";
-	}
+	// }
 })
 
 function getPageName(url) {
