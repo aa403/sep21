@@ -21,14 +21,15 @@ $("#submit").on('click', function() {
         type: "GET",
         url: "pw.php",
         data: q,
-        success: function(pw_resp){
+        success: function(resp){
+        	var pw_resp = JSON.parse(resp)
         	console.log(q)
         	console.log(pw_resp)
         	console.log(target)
 
-           if (pw_resp[0] == true){
+           if (pw_resp.pass == true){
 				$("#pw_box").slideUp("slow")
-				$("#__main_content").html(pw_resp[1])
+				$("#__main_content").html(pw_resp.ctt)
 				
 			}
 			else {

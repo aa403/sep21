@@ -7,10 +7,10 @@
 	if ($_GET['q']){
 		$q = $_GET["q"];
 		if ($q == $pw){
-			echo json_encode(array(true,$content));
+			echo json_encode(array('pass'=>true,'ctt'=>$content));
 		}
 		else{
-			echo json_encode(array(false,""));
+			echo json_encode(array('pass'=>false,'ctt'=>""));
 		}
 	}
 ?>
