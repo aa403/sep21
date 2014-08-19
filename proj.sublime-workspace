@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"sl",
+				"slideDown"
+			],
+			[
+				"c",
+				"currurl"
+			],
+			[
+				"get",
+				"getPageName"
+			],
+			[
+				"pw",
+				"pw_resp"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
 				"ur",
 				"urls"
 			],
@@ -360,10 +404,6 @@
 				"setmortgageValue"
 			],
 			[
-				"get",
-				"getattr"
-			],
-			[
 				"tota",
 				"totalEarning"
 			],
@@ -474,51 +514,68 @@
 			[
 				"hi",
 				"historic_t"
-			],
-			[
-				"histr",
-				"historic"
-			],
-			[
-				"HIS",
-				"historic"
-			],
-			[
-				"dt",
-				"dtype"
-			],
-			[
-				"forecast_No",
-				"forecast_NoShock_cum"
-			],
-			[
-				"cum",
-				"cumsum"
-			],
-			[
-				"par",
-				"parentTag"
-			],
-			[
-				"xd",
-				"x_dates"
-			],
-			[
-				"balances",
-				"All_nonMg_liquid_balances"
-			],
-			[
-				"meta",
-				"meta_headers"
-			],
-			[
-				"call",
-				"call_time"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "thewedding.html",
+			"settings":
+			{
+				"buffer_size": 1266,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pw.js",
+			"settings":
+			{
+				"buffer_size": 1004,
+				"line_ending": "Windows",
+				"name": "pw.js"
+			}
+		},
+		{
+			"file": "pw.php",
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 41,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content.html",
+			"settings":
+			{
+				"buffer_size": 7807,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sep21.html",
+			"settings":
+			{
+				"buffer_size": 8226,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout.css",
+			"settings":
+			{
+				"buffer_size": 7020,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -548,6 +605,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/aakh/Documents/Gits/sep21/js.js",
+		"/C/Users/aakh/Documents/Gits/sep21/content.html",
+		"/C/Users/aakh/Documents/Gits/sep21/sep21.html",
+		"/C/Users/aakh/Documents/Gits/sep21/index.php",
+		"/C/Users/aakh/Downloads/favicon.ico",
+		"/C/Users/aakh/Documents/Gits/ScenarioManager/staticfiles/smcore/mainhandlers.js",
+		"/C/Users/aakh/Documents/Gits/ScenarioManager/staticfiles/smcore/mainfunctions.js",
+		"/C/Users/aakh/Documents/Gits/sep21/pw.php",
+		"/C/Users/aakh/Documents/Gits/sep21/.gitignore",
 		"/C/Users/aakh/AppData/Local/Temp/Temp1_ESB Samples.zip/POST Payment from Account OUTPUT.json",
 		"/C/Users/aakh/Downloads/txn.json",
 		"/C/Users/aakh/Documents/Gits/ScenarioManager/sm/urls.py",
@@ -666,16 +732,7 @@
 		"/C/heroku/hellodjango/hellodjango/urls.py",
 		"/C/heroku/hellodjango/.gitignore",
 		"/C/heroku/hellodjango/hellodjango/wsgi.py",
-		"/C/heroku/hellodjango/Procfile",
-		"/C/Users/aakh/Desktop/ben_error",
-		"/C/Users/aakh/Documents/GitHub/ScenarioManager/sm/smcore/models/general.py",
-		"/C/Users/aakh/Documents/GitHub/ScenarioManager/sm/smcore/admin.py",
-		"/C/Users/aakh/Documents/GitHub/ScenarioManager/sm/sm/views.py",
-		"/C/Users/aakh/Documents/GitHub/ScenarioManager/sm/sm/urls.py",
-		"/C/Users/aakh/Documents/GitHub/ScenarioManager/sm/smcore/migrations/0001_initial.py",
-		"/C/Users/aakh/Documents/Python/LIVING/ScenarioManagerStandAlone/smCore/__init__.py",
-		"/C/Users/aakh/Documents/GitHub/ScenarioManager/sm/smcore/migrations/__init__.py",
-		"/C/Users/aakh/Documents/GitHub/ScenarioManager/sm/sm/settings.py"
+		"/C/heroku/hellodjango/Procfile"
 	],
 	"find":
 	{
@@ -711,6 +768,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"",
+			":Active",
+			"rsvp",
+			"main",
+			"to-lin",
+			"click here",
+			".main",
+			"redirect",
+			"open",
+			"barn",
+			"hea",
+			"heavy",
+			"2-3",
+			"forget",
+			"navi",
+			"navitem",
+			"smallMob",
+			"centered",
+			"smallMob",
+			"small",
+			"resp",
+			"1-5",
+			"33",
+			"1-5",
+			"clear",
+			"noFlo",
+			"linked",
+			"navItem",
+			">\n",
+			"#right",
+			"pattern",
+			"#right",
+			"opa",
+			"side",
+			".side",
+			">\n",
+			"main",
+			".main",
+			"navitem",
+			"mob",
+			"card_con",
+			"re",
+			"nav",
+			"to-link",
 			"what",
 			" ",
 			"\\",
@@ -794,51 +895,7 @@
 			")\n",
 			"Date",
 			"service",
-			"	",
-			"2014",
-			"]",
-			"[",
-			"InlineAggregate",
-			"TransformFunctionPhase",
-			"processPartition",
-			"ForwardIndexBuilder",
-			"include",
-			"distutils",
-			"-mno-cygwin",
-			"&",
-			";",
-			"&",
-			" ",
-			"=",
-			"&",
-			";",
-			"&",
-			"_",
-			" ",
-			"   ",
-			":",
-			"heroku",
-			"description",
-			"status",
-			"desc",
-			"')\n",
-			" - ",
-			"url",
-			"&",
-			"\n\n",
-			"\n",
-			"\n\n",
-			",,",
-			"http://www.transportdirect.info/carparking",
-			"]],\n",
-			"1",
-			"])\n",
-			"datamodels",
-			"progress",
-			")\n",
-			"getaccounts",
-			"herokuapp",
-			"')\n"
+			"	"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -888,13 +945,205 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "thewedding.html",
+					"settings":
+					{
+						"buffer_size": 1266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pw.js",
+					"settings":
+					{
+						"buffer_size": 1004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"auto_name": "pw.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 84.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pw.php",
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 41,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "content.html",
+					"settings":
+					{
+						"buffer_size": 7807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7807,
+								7807
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1222.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sep21.html",
+					"settings":
+					{
+						"buffer_size": 8226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8171,
+								8142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2020.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 6,
+					"file": "layout.css",
+					"settings":
+					{
+						"buffer_size": 7020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -948,7 +1197,7 @@
 		"cols":
 		[
 			0.0,
-			0.651086240948,
+			0.510793687757,
 			1.0
 		],
 		"rows":
@@ -1028,6 +1277,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 81.0,
+	"side_bar_width": 335.0,
 	"status_bar_visible": true
 }
