@@ -14,15 +14,13 @@ $(document).keypress(function(e) {
 
 
 $("#submit").on('click', function() {
-	if ($("#pw_attempt").val()==""){
-		pw_val="0"
-	}
-	else{
+	var pw_val="nothing"
+	if ($("#pw_attempt").val()!=""){
 		pw_val=$("#pw_attempt").val()
 	}
 
 	var q='q=' + pw_val
-	
+
 	var target=$(this).data("target")
 	// submit to back end
 	$.ajax({
