@@ -27,7 +27,7 @@ $("#submit").on('click', function() {
         	console.log(target)
 
            if (pw_resp == true){
-				
+				pw_done=true
 				window.location=target;
 			}
 			else {
