@@ -1,0 +1,17 @@
+/*fonts.css*/
+
+@font-face {
+  font-family: 'info';
+  src: url(fonts/FrenteH1-Regular.otf) format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'curvy';
+  src: url(fonts/Lavanderia-Delicate.otf) format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'blockish';
+  font-weight: 200;
+  src: url(fonts/Explogos.ttf) format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

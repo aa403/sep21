@@ -2,28 +2,19 @@
 
 
 /*fonts*/
-@font-face {
-  font-family: 'info';
-  src: url(fonts/FrenteH1-Regular.otf) format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'curvy';
-  src: url(fonts/Lavanderia-Delicate.otf) format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'blockish';
-  font-weight: 200;
-  src: url(fonts/Explogos.ttf) format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-
 body {
     font-family: info;
     color: rgb(61,64,57);
 	
   }
+
+p {
+display: block;
+-webkit-margin-before: 0.5em;
+-webkit-margin-after: 0.4em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
 
 .center-text{
 	text-align: center!important;
@@ -33,6 +24,7 @@ body {
 	font-family: info;
 	/*font-weight: 400;*/
 	font-size: 2em;
+	/*line-height: 1em;*/
 	margin-right: 2px;
 	vertical-align: middle;
 	overflow: hidden;
@@ -42,6 +34,7 @@ body {
 	font-family: curvy;
 	/*font-weight: 400;*/
 	font-size: 2em;
+	/*line-height: 1em;*/
 	vertical-align: middle;
 	overflow: hidden;
 	}
@@ -50,6 +43,7 @@ body {
 	font-family: blockish;
 	/*font-weight: 400;*/
 	font-size: 1.5em;
+	/*line-height: 1em;*/
 	margin-right: 2px;
 	vertical-align: middle;
 	overflow: hidden;
@@ -305,7 +299,7 @@ input:focus{
 	right: 0px;
 	z-index: -100;
 	bottom: 0;
-	top: 0;
+	top: 120px;
 	width: 133px;
 	background: url(img/_pattern.png);
 	background-repeat: no-repeat; 
@@ -421,8 +415,8 @@ input:focus{
 	right: 0px;
 	z-index: -100;
 	bottom: 0;
-	top: 0;
-	width: 250;
+	top: 120px;
+	width: 250px;
 	background: url(img/_pattern.png);
 	background-repeat: no-repeat;
 	background-size: 65%;
