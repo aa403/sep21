@@ -74,21 +74,6 @@ display: block;
 	font-weight: bold;
 }
 
-.small {
-	font-size: 1.5em!important;
-}
-
-.smaller {
-	font-size: 75%!important;
-}
-
-.big {
-	font-size: 200%!important;
-}
-
-.bigger {
-	font-size: 300%!important;
-}
 
 /*layout*/
 
@@ -248,6 +233,32 @@ input:focus{
 
 /*phone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nonMobile {
+  	display: none;
+  }
+
+  .mediumMobile {
+	font-size: 1.5em!important;
+  }
+
+  .smallMobile {
+	font-size: 1em!important;
+  }
+  .small {
+	font-size: 1.5em!important;
+	}
+
+  .smaller {
+	font-size: 75%!important;
+	}
+
+  .big {
+	font-size: 200%!important;
+	}
+
+  .bigger {
+	font-size: 200%!important;
+	}
 
   .row {
 	height: 100px;
@@ -354,23 +365,26 @@ input:focus{
 	box-sizing: border-box;
 	}
 
-  .nonMobile {
-  	display: none;
-  }
-
-  .mediumMobile {
-	font-size: 1.5em!important;
-  }
-
-  .smallMobile {
-	font-size: 1em!important;
-  }
-
 }
 
 /*desktop*/
 @media all and ( min-width: 961px ) {
- 
+  .small {
+	font-size: 1.5em!important;
+	}
+
+  .smaller {
+	font-size: 75%!important;
+	}
+
+  .big {
+	font-size: 200%!important;
+	}
+
+  .bigger {
+	font-size: 300%!important;
+	}
+
   .row {
 	height: 52px;
 	/*display: flex;*/
