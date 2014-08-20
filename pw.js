@@ -1,8 +1,7 @@
 $(document).ready(function () { 
 	// back_target = "home"
 	$('#pw_attempt').focus();
-	$('html, body').scrollTop(0);
-})
+});
 
 $(document).keypress(function(e) {
     if(e.which == 13 && $("#pw_attempt").is(":focus")) {

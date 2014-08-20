@@ -1,3 +1,7 @@
+$(document).ready(function () { 
+	$('html, body').scrollTop(0);
+});
+
 function getPageName(url) {
     var index = url.lastIndexOf("/") + 1;
     var filenameWithExtension = url.substr(index);
@@ -15,7 +19,6 @@ $(".navItem").on('click', function() {
     $(this).addClass("currentPage")
 	
 	// find all divs with classes displayedContent
-	back_target = $(".displayedContent").attr('id')
 	$(".displayedContent").addClass("hiddenContent")
 	$(".displayedContent").removeClass("displayedContent")
 	// $('html, body').animate({ scrollTop: 0 }, 'slow');
@@ -24,6 +27,7 @@ $(".navItem").on('click', function() {
 	target_ele = $("#".concat(target))
 	target_ele.removeClass('hiddenContent')
 	target_ele.addClass('displayedContent')
+	$('html, body').scrollTop(0);
 
 });
 
@@ -49,12 +53,13 @@ $(".nav").on('click', function() {
 	target_ele = $("#".concat(target))
 	target_ele.removeClass('hiddenContent')
 	target_ele.addClass('displayedContent')
+	$('html, body').scrollTop(0);
 
 });
 
 
 // open external link
-$('.to-link').click(function() {
+$('.to-link').on('click', function() {
 	target=$(this).data("target")
 	window.open(target);
   });
