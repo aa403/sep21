@@ -171,29 +171,6 @@ body {
 	background-size: contain;
 }
 
-#pw_attempt{
-	display: inline-block;
-	width: 132px;
-	height: 103%;
-	vertical-align: middle;
-}
-#submit{
-	display: inline-block;
-	margin-top: -4px;
-	cursor: pointer;
-	/*border-bottom: 1px solid rgb(61,64,57);*/
-}
-
-#submit:hover{
-	border-bottom: 2px solid rgb(61,64,57);
-	font-weight: 500;
-}
-
-#try_again{
-	display: none;
-	padding-left: 134px
-}
-
 input, input[type="password"], input[type="search"] {
 	-webkit-appearance: textfield;
 	border: 1px solid rgb(237,222,201);
@@ -365,6 +342,38 @@ input:focus{
 	box-sizing: border-box;
 	}
 
+	.pwBox{
+		padding-left:30px;
+		height: 1em;
+	}
+
+	#pw_box{
+		margin-top: -60px;
+	}
+
+	#pw_attempt{
+		display: inline-block;
+		width: 132px;
+		height: 103%;
+		vertical-align: middle;
+	}
+	#submit{
+		display: inline-block;
+		margin-top: -4px;
+		cursor: pointer;
+		/*border-bottom: 1px solid rgb(61,64,57);*/
+	}
+
+	#submit:hover{
+		border-bottom: 2px solid rgb(61,64,57);
+		font-weight: 500;
+	}
+
+	#try_again{
+		display: none;
+		padding-left: 134px
+	}
+
 }
 
 /*desktop*/
@@ -490,7 +499,33 @@ input:focus{
   	display: table;
   	overflow: overlay;
   }
+	#pw_attempt{
+		display: inline-block;
+		width: 132px;
+		height: 103%;
+		vertical-align: middle;
+	}
+	#submit{
+		display: inline-block;
+		margin-top: -4px;
+		cursor: pointer;
+		/*border-bottom: 1px solid rgb(61,64,57);*/
+	}
 
+	#submit:hover{
+		border-bottom: 2px solid rgb(61,64,57);
+		font-weight: 500;
+	}
+
+	#try_again{
+		display: none;
+		padding-left: 134px
+	}
+
+	.pwBox{
+		padding-left:50px;
+		height: 1em;
+	}
 
 }
  
