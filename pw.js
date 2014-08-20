@@ -29,7 +29,8 @@ $("#submit").on('click', function() {
         success: function(resp){
         	// console.log(q)
         	// console.log(resp)
-        	var pw_resp = JSON.parse(resp)
+        	try{var pw_resp = JSON.parse(resp)}
+        	catch(err){var pw_resp = err}
         	// console.log(pw_resp)
         	// console.log(target)
 
@@ -40,9 +41,13 @@ $("#submit").on('click', function() {
 				
 			}
 			else {
-				$("#try_again").slideDown("slow")
-				$("#pw_attempt").removeAttr('value')
+				$("#pw_attempt").val("")
+				$("#try_again").slideDown()
 			}
+        },
+        error: function (jqXHR, exception){
+        	$("#pw_attempt").val("")
+			$("#try_again").slideDown()
         }
 
     }); // Ajax Call
