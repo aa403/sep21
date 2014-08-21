@@ -320,6 +320,7 @@ input:focus{
 	margin-right: 2px;
 	vertical-align: middle;
 	cursor: pointer;
+	text-overflow:ellipsis;
 	}
 
 
@@ -471,6 +472,7 @@ input:focus{
 	margin-right: 5px;
 	vertical-align: middle;
 	cursor: pointer;
+	text-overflow:ellipsis;
 	}
 
  .resp_div{
@@ -639,6 +641,7 @@ input:focus{
 	margin-right: 2px;
 	vertical-align: middle;
 	cursor: pointer;
+	text-overflow:ellipsis;
 	}
 
 
