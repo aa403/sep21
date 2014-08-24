@@ -15,7 +15,7 @@ $(document).keypress(function(e) {
 
 
 
-$("#submit").on('click', function() {
+$("#pw_submit").on('click', function() {
 	var pw_val="nothing"
 	if ($("#pw_attempt").val()!=""){
 		pw_val=$("#pw_attempt").val()
