@@ -53,12 +53,12 @@ $("#pw_submit").on('click', function() {
 			}
 			else {
 				$("#pw_attempt").val("")
-				$("#try_again").slideDown()
+				$("#try_again").slideDown().delay(1500).slideUp(250)
 			}
         },
         error: function (jqXHR, exception){
         	$("#pw_attempt").val("")
-			$("#try_again").slideDown()
+			$("#try_again").slideDown().delay(1500).slideUp(250)
         }
 
     }); // Ajax Call
@@ -156,19 +156,19 @@ $("#add_song").on('click', function() {
         	// console.log(target)
 
            if (song_resp == true){
-				$("#nice_choice").slideDown(250)
+				$("#nice_choice").slideDown(250).delay(1500).slideUp(250)
 				// $("#nice_choice").css("-webkit-animation-play-state","running")
 				// $("#nice_choice").css("-animation-play-state","running")
 
 			}
 			else {
-				$("#something_wrong").slideDown(250)
+				$("#something_wrong").slideDown(250).delay(1500).slideUp(250)
 				// $("#something_wrong").css("-webkit-animation-play-state","running")
 				// $("#something_wrong").css("-animation-play-state","running")
 			}
         },
         error: function (jqXHR, exception){
-        	$("#something_wrong").slideDown(300)
+        	$("#something_wrong").slideDown(300).delay(1500).slideUp(250)
    //      	$("#something_wrong").css("-webkit-animation-play-state","running")
 			// $("#something_wrong").css("-animation-play-state","running")
         }
