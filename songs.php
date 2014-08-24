@@ -18,7 +18,7 @@
 				// INSERT INTO films (code, title, did, date_prod, kind)
 				// 			VALUES ('T_601', 'Yojimbo', 106, '1961-06-16', 'Drama');
 		// $result = pg_query($dbconn, "INSERT INTO songs (request) VALUES($song)");
-		-- $result = pg_query($dbconn, "INSERT INTO songs (request,) VALUES(\'song\',)");
+		$result = pg_query($dbconn, "INSERT INTO songs (request,) VALUES(\'song\',)");
 
 		//dump the result object
 		if ($result == false) {
