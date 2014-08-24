@@ -131,15 +131,7 @@ $("#add_song.submit").on('click', function() {
 		song_val=$("#songs").val()
 
 		var q='q=' + song_val
-		
-		// reset css animations
-		$("#nice_choice").hide()
-		// $("#nice_choice").css("-webkit-animation-play-state","paused")
-		// $("#nice_choice").css("-animation-play-state","paused")
 
-		$("#something_wrong").hide()
-		// $("#something_wrong").css("-webkit-animation-play-state","paused")
-		// $("#something_wrong").css("-animation-play-state","paused")
 
 		// submit to back end
 		$.ajax({
