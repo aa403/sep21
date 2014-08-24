@@ -1,6 +1,13 @@
 $(document).ready(function () { 
 	$('html, body').scrollTop(0);
-	$('#pw_attempt').focus();
+	
+	if ($('#pw_attempt').is(':visible')){
+		$('#pw_attempt').focus();
+	
+	if ($('#songs').is(':visible')){
+		$('#songs').focus();
+	}
+
 });
 
 
