@@ -4,7 +4,7 @@ $(document).ready(function () {
 	if ($('#pw_attempt').is(':visible')){
 		$('#pw_attempt').focus();
 		}
-			
+
 	if ($('#songs').is(':visible')){
 		$('#songs').focus();
 	}
@@ -150,12 +150,12 @@ $("#add_song").on('click', function() {
         success: function(resp){
         	// console.log(q)
         	// console.log(resp)
-        	try{var song_resp = JSON.parse(resp)}
+        	try{var song_resp = resp}
         	catch(err){var song_resp = err}
         	// console.log(song_resp)
         	// console.log(target)
 
-           if (song_resp.pass == true){
+           if (song_resp == true){
 				$("#nice_choice").slideDown(250)
 				// $("#nice_choice").css("-webkit-animation-play-state","running")
 				// $("#nice_choice").css("-animation-play-state","running")
