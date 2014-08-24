@@ -3,7 +3,8 @@ $(document).ready(function () {
 	
 	if ($('#pw_attempt').is(':visible')){
 		$('#pw_attempt').focus();
-	
+		}
+			
 	if ($('#songs').is(':visible')){
 		$('#songs').focus();
 	}
