@@ -63,3 +63,58 @@ $('.to-link').on('click', function() {
 	target=$(this).data("target")
 	window.open(target);
   });
+
+
+// submit a song
+$("#add_song").on('click', function() {
+	var song_val="nothing"
+
+	if ($("#songs").val()!=""){
+		song_val=$("#songs").val()
+	}
+
+	var q='q=' + song_val
+	
+	// reset css animations
+	$("#nice_choice").css("display","none")
+	$("#nice_choice").css("-webkit-animation-play-state","paused")
+	$("#nice_choice").css("-animation-play-state","paused")
+
+	$("#something_wrong").css("display","none")
+	$("#something_wrong").css("-webkit-animation-play-state","paused")
+	$("#something_wrong").css("-animation-play-state","paused")
+
+	// submit to back end
+	$.ajax({
+        type: "GET",
+        url: "songs.php",
+        data: q,
+        success: function(resp){
+        	// console.log(q)
+        	// console.log(resp)
+        	try{var song_resp = JSON.parse(resp)}
+        	catch(err){var song_resp = err}
+        	// console.log(song_resp)
+        	// console.log(target)
+
+           if (song_resp.pass == true){
+				$("#nice_choice").slideToggle(250)
+				// $("#nice_choice").css("-webkit-animation-play-state","running")
+				// $("#nice_choice").css("-animation-play-state","running")
+
+			}
+			else {
+				$("#something_wrong").slideToggle(250)
+				// $("#something_wrong").css("-webkit-animation-play-state","running")
+				// $("#something_wrong").css("-animation-play-state","running")
+			}
+        },
+        error: function (jqXHR, exception){
+        	$("#something_wrong").slideToggle(300)
+   //      	$("#something_wrong").css("-webkit-animation-play-state","running")
+			// $("#something_wrong").css("-animation-play-state","running")
+        }
+
+    }); // Ajax Call
+
+})

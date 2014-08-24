@@ -4,10 +4,11 @@ $(document).ready(function () {
 });
 
 $(document).keypress(function(e) {
-    if(e.which == 13 && $("#pw_attempt").is(":focus")) {
-
-        $("#submit").click()
-    }
+	if($(document.activeElement).is(':input')){
+	 if(e.which == 13){
+	 	$(this).nextAll(".submit").click();
+    	}
+	}
 });
 
 
