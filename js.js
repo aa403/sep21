@@ -124,55 +124,55 @@ $('.to-link').on('click', function() {
 
 
 // submit a song
-$("#add_song").on('click', function() {
+$("#add_song.submit").on('click', function() {
 	var song_val="nothing"
 
 	if ($("#songs").val()!=""){
 		song_val=$("#songs").val()
-	}
 
-	var q='q=' + song_val
-	
-	// reset css animations
-	$("#nice_choice").hide()
-	// $("#nice_choice").css("-webkit-animation-play-state","paused")
-	// $("#nice_choice").css("-animation-play-state","paused")
+		var q='q=' + song_val
+		
+		// reset css animations
+		$("#nice_choice").hide()
+		// $("#nice_choice").css("-webkit-animation-play-state","paused")
+		// $("#nice_choice").css("-animation-play-state","paused")
 
-	$("#something_wrong").hide()
-	// $("#something_wrong").css("-webkit-animation-play-state","paused")
-	// $("#something_wrong").css("-animation-play-state","paused")
+		$("#something_wrong").hide()
+		// $("#something_wrong").css("-webkit-animation-play-state","paused")
+		// $("#something_wrong").css("-animation-play-state","paused")
 
-	// submit to back end
-	$.ajax({
-        type: "GET",
-        url: "songs.php",
-        data: q,
-        success: function(resp){
-        	// console.log(q)
-        	// console.log(resp)
-        	try{var song_resp = resp}
-        	catch(err){var song_resp = err}
-        	// console.log(song_resp)
-        	// console.log(target)
+		// submit to back end
+		$.ajax({
+	        type: "GET",
+	        url: "songs.php",
+	        data: q,
+	        success: function(resp){
+	        	// console.log(q)
+	        	// console.log(resp)
+	        	try{var song_resp = resp}
+	        	catch(err){var song_resp = err}
+	        	// console.log(song_resp)
+	        	// console.log(target)
 
-           if (song_resp == true){
-				$("#nice_choice").slideDown(250).delay(1500).slideUp(250)
-				// $("#nice_choice").css("-webkit-animation-play-state","running")
-				// $("#nice_choice").css("-animation-play-state","running")
+	           if (song_resp == true){
+					$("#nice_choice").slideDown(250).delay(1500).slideUp(250)
+					// $("#nice_choice").css("-webkit-animation-play-state","running")
+					// $("#nice_choice").css("-animation-play-state","running")
 
-			}
-			else {
-				$("#something_wrong").slideDown(250).delay(1500).slideUp(250)
-				// $("#something_wrong").css("-webkit-animation-play-state","running")
+				}
+				else {
+					$("#something_wrong").slideDown(250).delay(1500).slideUp(250)
+					// $("#something_wrong").css("-webkit-animation-play-state","running")
+					// $("#something_wrong").css("-animation-play-state","running")
+				}
+	        },
+	        error: function (jqXHR, exception){
+	        	$("#something_wrong").slideDown(300).delay(1500).slideUp(250)
+	   //      	$("#something_wrong").css("-webkit-animation-play-state","running")
 				// $("#something_wrong").css("-animation-play-state","running")
-			}
-        },
-        error: function (jqXHR, exception){
-        	$("#something_wrong").slideDown(300).delay(1500).slideUp(250)
-   //      	$("#something_wrong").css("-webkit-animation-play-state","running")
-			// $("#something_wrong").css("-animation-play-state","running")
-        }
+	        }
 
-    }); // Ajax Call
+	    }); // Ajax Call
+	}
 
 })
