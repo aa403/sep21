@@ -414,7 +414,7 @@ input:focus{
 }
 
 /*desktop large window*/
-@media all and ( min-width: 696px ) {
+@media all and ( min-width: 866px ) {
   .small {
 	font-size: 1.5em!important;
 	}
@@ -578,7 +578,7 @@ input:focus{
  
 
 /*desktop small window*/
-@media all and ( max-width: 695px ) {
+@media all and ( max-width: 865px ) {
   .nonMobile {
   	display: none;
   }

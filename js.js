@@ -126,13 +126,13 @@ $("#add_song").on('click', function() {
 	var q='q=' + song_val
 	
 	// reset css animations
-	$("#nice_choice").css("display","none")
-	$("#nice_choice").css("-webkit-animation-play-state","paused")
-	$("#nice_choice").css("-animation-play-state","paused")
+	$("#nice_choice").hide()
+	// $("#nice_choice").css("-webkit-animation-play-state","paused")
+	// $("#nice_choice").css("-animation-play-state","paused")
 
-	$("#something_wrong").css("display","none")
-	$("#something_wrong").css("-webkit-animation-play-state","paused")
-	$("#something_wrong").css("-animation-play-state","paused")
+	$("#something_wrong").hide()
+	// $("#something_wrong").css("-webkit-animation-play-state","paused")
+	// $("#something_wrong").css("-animation-play-state","paused")
 
 	// submit to back end
 	$.ajax({
@@ -148,19 +148,19 @@ $("#add_song").on('click', function() {
         	// console.log(target)
 
            if (song_resp.pass == true){
-				$("#nice_choice").slideToggle(250)
+				$("#nice_choice").slideDown(250)
 				// $("#nice_choice").css("-webkit-animation-play-state","running")
 				// $("#nice_choice").css("-animation-play-state","running")
 
 			}
 			else {
-				$("#something_wrong").slideToggle(250)
+				$("#something_wrong").slideDown(250)
 				// $("#something_wrong").css("-webkit-animation-play-state","running")
 				// $("#something_wrong").css("-animation-play-state","running")
 			}
         },
         error: function (jqXHR, exception){
-        	$("#something_wrong").slideToggle(300)
+        	$("#something_wrong").slideDown(300)
    //      	$("#something_wrong").css("-webkit-animation-play-state","running")
 			// $("#something_wrong").css("-animation-play-state","running")
         }
