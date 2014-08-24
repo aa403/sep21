@@ -9,7 +9,8 @@
 				or die('Could not connect: ' . pg_last_error());
 
 		//perform the insert using pg_query
-		$result = pg_query($dbconn, "INSERT INTO songs(request, created) VALUES(\"$song\", time());");
+		//$result = pg_query($dbconn, "INSERT INTO songs(request, created) VALUES(\"$song\", time());");
+		$result = pg_query($dbconn, "INSERT INTO songs(request) VALUES(\"$song\");");
 
 		//dump the result object
 		if ($result == false) {
