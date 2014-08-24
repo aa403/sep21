@@ -1,7 +1,7 @@
 <?php
 	if ($_GET['q']){
-		$song = "\'".$_GET["q"];
-		$song = $song."\'";
+		$song = "'".$_GET["q"];
+		$song = $song."'";
 
 		$dbconn = pg_connect("host=ec2-54-247-118-153.eu-west-1.compute.amazonaws.com 
 					dbname=d7ae6vj91njv84
