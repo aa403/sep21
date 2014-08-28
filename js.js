@@ -153,13 +153,15 @@ $("#add_song.submit").on('click', function() {
 
 				}
 				else {
-					$("#something_wrong").slideDown(250).delay(1500).slideUp(250)
+					$("#songs").slideDown(250).delay(1500).slideUp(250)
 					// $("#something_wrong").css("-webkit-animation-play-state","running")
 					// $("#something_wrong").css("-animation-play-state","running")
 				}
+				$("#pw_attempt").val("")
 	        },
 	        error: function (jqXHR, exception){
 	        	$("#something_wrong").slideDown(300).delay(1500).slideUp(250)
+	        	$("#songs").val("")
 	   //      	$("#something_wrong").css("-webkit-animation-play-state","running")
 				// $("#something_wrong").css("-animation-play-state","running")
 	        }
